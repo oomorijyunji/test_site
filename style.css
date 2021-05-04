@@ -1,0 +1,64 @@
+/*全体の幅を最大1200px中央揃え*/
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+/*
+    
+    headerホームの余計な余白を消す*/
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.top{
+    display: flex;
+}
+.img_eye{
+    display: flex;
+    margin: 0 auto;
+    flex:1;
+}
+.img_eye img{
+    max-width:100%;
+    height:auto;
+}
+.top_right{
+    display: flex;
+    margin: 0 auto;
+    flex:1;
+    flex-direction:column;
+    align-content:center;
+}
+.top_right img{
+    max-width:100%;
+    height:auto;
+}
+.content{
+    display: flex;
+    justify-content:center;
+    align-content:center;
+}
+div{
+    text-align: center;
+    justify-content:center;
+    align-content:center;
+}
+.formula{
+    border:1px solid gray
+}
+nav{
+    width: 300px;
+}
+footer ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+footer small{
+    margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+}

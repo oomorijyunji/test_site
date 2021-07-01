@@ -323,8 +323,8 @@ table tr:nth-child(even) td {
   background-color: #EECFC0;
   text-align: left;
   padding: 5px 15px;
-  width: 360px;
-  font-size: 1.2rem;
+  width: 300px;
+  font-size: 1rem;
 }
 .unnumbered{
   list-style: none;
@@ -337,10 +337,10 @@ table tr:nth-child(even) td {
   font-weight: bold;
   padding: 1rem;
   line-height: 2;
-  font-size: 1.5rem;
-  width: 350px;
+  font-size: 1.2rem;
+  width: 300px;
   position: absolute;
-  top: 2rem;
+  top: 1.3rem;
   left: 2rem;
   z-index: -1;
 }

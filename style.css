@@ -56,7 +56,7 @@ body {
   display        : inline-block;
   color          : #ffffff;            /* 文字の色 */
   font-size      : 72px;               /* 文字のサイズ */
-  letter-spacing : 8px;                /* 文字間 */
+  letter-spacing : 12px;                /* 文字間 */
   text-shadow    : 
        2px  2px 1px #22402d,
       -2px  2px 1px #22402d,
@@ -127,8 +127,8 @@ main {
 }
 .chapter1Text{
   position: absolute;
-  top: 15px;
-  left: 90px;
+  top: 13%;
+  left: 13%;
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
@@ -136,8 +136,8 @@ main {
 }
 .chapter2Text{
   position: absolute;
-  top: 15px;
-  left: 85px;
+  top: 13%;
+  left: 13%;
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
@@ -145,8 +145,8 @@ main {
 }
 .chapter3Text{
   position: absolute;
-  top: 15px;
-  left: 53px;
+  top: 13%;
+  left: 13%;
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
@@ -154,8 +154,8 @@ main {
 }
 .chapter4Text{
   position: absolute;
-  top: 15px;
-  left: 75px;
+  top: 13%;
+  left: 13%;
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
@@ -163,8 +163,8 @@ main {
 }
 .chapter5Text{
   position: absolute;
-  top: 15px;
-  left: 28%;
+  top: 13%;
+  left: 13%;
   font-size: 1.4rem;
   line-height: 2rem;
   font-weight: bold;
@@ -276,8 +276,8 @@ table tr:nth-child(even) td {
 }
 .blue_imgText{
   position: absolute;
-  top: 45px;
-  left: 120px;
+  top: 15%;
+  left: 30%;
   color: #fff;
   font-weight: bold;
   font-size: 1.3rem;
@@ -462,8 +462,8 @@ table tr:nth-child(even) td {
 }
 .blue_imgText2{
 position: absolute;
-top: 50px;
-left: 120px;
+top: 15%;
+left: 30%;
 color: #fff;
 font-weight: bold;
 font-size: 1.3rem;

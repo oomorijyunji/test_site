@@ -229,7 +229,7 @@ table tr:nth-child(even) td {
   border: solid 1px #ccc;
 }
 .tableCharacter{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .fee td{
   padding: 10px;
@@ -279,7 +279,7 @@ table tr:nth-child(even) td {
 .blue_imgText{
   position: absolute;
   top: 15%;
-  left: 26%;
+  left: 27.5%;
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
@@ -316,9 +316,9 @@ table tr:nth-child(even) td {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.tableCharacterHokkaido{
-  font-size: 0.8rem;
-}
+/* .tableCharacterHokkaido{
+  font-size: 0.7rem;
+} */
 
 .required{
   position: relative;

@@ -322,7 +322,7 @@ table tr:nth-child(even) td {
   font-weight: bold;
   background-color: #EECFC0;
   text-align: left;
-  padding: 5px 8px;
+  padding: 5px 5px;
   width: 250px;
   font-size: 0.6rem;
 }

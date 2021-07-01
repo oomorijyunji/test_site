@@ -322,8 +322,8 @@ table tr:nth-child(even) td {
   font-weight: bold;
   background-color: #EECFC0;
   text-align: left;
-  padding: 5px 15px;
-  width: 260px;
+  padding: 5px 10px;
+  width: 250px;
   font-size: 0.75rem;
 }
 .unnumbered{

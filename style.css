@@ -324,7 +324,7 @@ table tr:nth-child(even) td {
   text-align: left;
   padding: 5px 15px;
   width: 260px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 .unnumbered{
   list-style: none;

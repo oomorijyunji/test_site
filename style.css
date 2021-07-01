@@ -1,64 +1,525 @@
-/*全体の幅を最大1200px中央揃え*/
-body{
-    margin: 0 auto;
-    max-width: 1200px;
-    min-height: 100vh;
+@charset "utf-8"; /* スタイルシートのエンコーディングを Unicode UTF-8 にします */
+/* common */
+
+/* MDNで推奨されている、親要素のbox-sizingを継承する */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
-/*
-    
-    headerホームの余計な余白を消す*/
-.header_ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+
+/* paddingとborderをwidthとheightの中に含めて計算しやすくする */
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
 }
-.top{
-    display: flex;
+
+.imageWidth{
+  width: 100%;
 }
-.img_eye{
-    display: flex;
-    margin: 0 auto;
-    flex:1;
+
+/* small screen */
+
+body {
+  min-width: 320px;
+  color: #333;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  line-height: 1.5;
 }
-.img_eye img{
-    max-width:100%;
-    height:auto;
+.topNav{
+  display: none;
 }
-.top_right{
-    display: flex;
-    margin: 0 auto;
-    flex:1;
-    flex-direction:column;
-    align-content:center;
+.topText{
+  line-height: 30px;
+  padding: 10px;
 }
-.top_right img{
-    max-width:100%;
-    height:auto;
+
+.date{
+  color: #5a5a5a;
+  font-size: 17px;
 }
-.content{
-    display: flex;
-    justify-content:center;
-    align-content:center;
+
+.mainTitle{
+  font-size: 20px;
 }
-div{
-    text-align: center;
-    justify-content:center;
-    align-content:center;
+
+.sapica{
+  color:#FA8CA2;
+}
+
+.messageText1 {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.textIndex{
+  display        : inline-block;
+  color          : #ffffff;            /* 文字の色 */
+  font-size      : 80px;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px #22402d,
+      -2px  2px 1px #22402d,
+       2px -2px 1px #22402d,
+      -2px -2px 1px #22402d,
+       2px  0px 1px #22402d,
+       0px  2px 1px #22402d,
+      -2px  0px 1px #22402d,
+       0px -2px 1px #22402d;        /* 文字の影 */
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+.indexNav{
+  margin: 0 auto;
+}
+.indexMenu{
+  /* color: #22402d; */
+  font-size: 32px;
+  line-height: 64px;
+  font-weight: bold;
+}
+.indexMenuText{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.indexContainer{
+  padding: 10px;
+  background-color: #e9e9e9;
+  border: #22402d solid 2px;
+  margin-bottom: 150px;
+  width: 400px;
+}
+.questionContainer{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.question{
+  display        : inline-block;
+  color          : #ffffff;            /* 文字の色 */
+  font-size      : 80px;               /* 文字のサイズ */
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px #22402d,
+      -2px  2px 1px #22402d,
+       2px -2px 1px #22402d,
+      -2px -2px 1px #22402d,
+       2px  0px 1px #22402d,
+       0px  2px 1px #22402d,
+      -2px  0px 1px #22402d,
+       0px -2px 1px #22402d;        /* 文字の影 */
+}
+
+.messageText2Container{
+  text-align: center;
+}
+.messageText2{
+  width: 80%;
+  margin-bottom: 70px;
+}
+.chapter1,.chapter2,.chapter3,.chapter4,.chapter5{
+  position: relative;
+}
+.chapter1Text{
+  position: absolute;
+  top: 15px;
+  left: 28%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+.chapter2Text{
+  position: absolute;
+  top: 15px;
+  left: 27%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+.chapter3Text{
+  position: absolute;
+  top: 15px;
+  left: 23%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+.chapter4Text{
+  position: absolute;
+  top: 15px;
+  left: 25%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+.chapter5Text{
+  position: absolute;
+  top: 15px;
+  left: 28%;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin: 50px 0 70px 0;
+  text-align: left;
+  border-left: solid 5px #395184;
+  padding-left: 5px;
+}
+.margin16px{
+  margin: 16px;
+  font-weight: bold;
+}
+.margin32px{
+  margin: 32px;
+  font-weight: bold;
+}
+.fontSize15rem{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.lesson{
+  margin: 0 auto 100px;
+}
+.lesson th{
+  padding: 10px;
+}
+.lesson td{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: solid 1px #ccc;
+}
+table tr:nth-child(even) td {
+  background: #e9e9e9;
+}
+
+.basis{
+  margin-bottom: 10px;
+}
+.example{
+  text-align: left;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.bgcE9e9e9{
+  background-color: #e9e9e9;
+}
+.bgc395184{
+  background-color: #395184;
+  color: #fff;
+}
+.bgcE9f1ff{
+  background-color: #e9f1ff;
+}
+.fee th{
+  padding: 10px;
+  font-size: 1.2rem;
+  border: solid 1px #ccc;
+}
+.fee td{
+  padding: 10px;
+  font-size: 1.2rem;
+  border: solid 1px #ccc;
+}
+.fee{
+  margin-bottom: 70px;
 }
 .formula{
-    border:1px solid gray
+  border: solid 1px #5a5a5a;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 70px;
 }
-nav{
-    width: 300px;
+.color395184{
+  color: #395184;
 }
-footer ul{
-    display:flex;
-    justify-content: space-around;
-    list-style: none;
+.commentary{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-footer small{
-    margin: 0 auto;
+.lh1rem{
+  line-height: 1.5rem;
 }
-@media screen and (max-width: 1000px) {
+.marginB16px{
+  margin-bottom: 16px;
+}
+.marginB32px{
+  margin-bottom: 32px;
+}
+.marginB48px{
+  margin-bottom: 48px;
+}
+.marginB80px{
+  margin-bottom: 80px;
+}
+.marginB160px{
+  margin-bottom: 160px;
+}
+.blue_img{
+  position: relative;
+}
+.blue_imgText{
+  position: absolute;
+  top: 45px;
+  left: 35.5%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.human01{
+  text-align: left;
+}
+.fontWeight{
+  font-weight: bold;
+}
+.warningNote{
+  font-size: 0.8rem;
+}
+.textInCell{
+  vertical-align: middle;
+}
+.comparisonTable{
+  margin: 0 auto 80px;
+}
+.comparisonTableContents{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: solid 1px #ccc;
+  background-color: #E9F1FF;
+}
+.comparisonTable td{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: solid 1px #ccc;
+}
+.comparisonTableTitle{
+  padding: 10px 10px 20px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.required{
+  position: relative;
+}
+.automatedCharge{
+  font-weight: bold;
+  background-color: #EECFC0;
+  text-align: left;
+  padding: 5px 15px;
+  width: 360px;
+  font-size: 1.2rem;
+}
+.unnumbered{
+  list-style: none;
+  margin-top: 1rem;
+}
+.orderList{
+  list-style-position: inside;
+  text-align: left;
+  background-color: #F3EEE8;
+  font-weight: bold;
+  padding: 1rem;
+  line-height: 2;
+  font-size: 1.5rem;
+  width: 350px;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: -1;
+}
+.human03{
+  margin-top: 250px;
+  text-align: left;
+}
+.applicationForm{
+  position: relative;
+  margin-bottom: 500px;
+}
+.applicationFormText{
+  font-weight: bold;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #F3EEE8;
+  width: 30%;
+  font-size: 1.3rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.applicationFormImg{
+  border: solid 1px #ccc;
+  background-color: #F3EEE8;
+  width: 50%;
+  padding: 30px 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.bring{
+  position: relative;
+  margin-bottom: 700px;
+}
+.bringContainer{
+  border: solid 1px #ccc;
+  background-color: #F3EEE8;
+  width: 80%;
+  padding: 30px 40px;
+  font-weight: bold;
+  list-style-position: inside;
+  text-align: left;
+  line-height: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.bringTitle{
+  font-weight: bold;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #F3EEE8;
+  width: 40%;
+  font-size: 1.3rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.bringUnnumbered{
+  list-style: none;
+}
+.bringImg{
+  display: flex;
+  justify-content: space-between;
+}
+.bringUnnumberedText{
+  padding-left: 1rem;
+}
+.human04{
+  text-align: right;
+}
+.textRed{
+  color: #f02828;
+}
+.creditCard{
+  position: relative;
+  margin-bottom: 600px;
+}
+.creditCardList{
+  list-style: none;
+  border: solid 1px #ccc;
+  width: 72%;
+  font-weight: bold;
+  padding: 60px 15px 15px 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.creditCardName{
+  border: solid 1px #ccc;
+  width: 35%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+}
+.creditCardName1{
+  top: 2rem;
+  left: -2rem;
+}
+.creditCardName2{
+  top: 8rem;
+  left: -2rem;
+}
+.creditCardName3{
+  top: 14rem;
+  left: -2rem;
+}
+.creditCardName4{
+  top: 20rem;
+  left: -2rem;
+}
+.human05{
+  text-align: left;
+}
+.blue_imgText2{
+position: absolute;
+top: 45px;
+left: 35.5%;
+color: #fff;
+font-weight: bold;
+font-size: 1.3rem;
+line-height: 2.5rem;
+}
+.smallTitle{
+  font-size: 1.5rem;
+  text-align: left;
+}
+.card_inf{
+  border: solid 3px #4d4d4d;
+  padding: 50px 10px;
+  width: 400px;
+  margin: 0 auto 40px;
+}
+.cardInfoTitle{
+  font-size: 1.5rem;
+}
+
+
+
+
+aside {
+  display: none;
+}
+
+/* ------------ここからfooter------------- */
+footer{
+  padding: 20px;
+  background-color: #395184;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.footerNav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.fontSettings{
+  font-size: 16px;
+  padding: 20px 20px 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.privacy{
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+/* medium screen */
+@media screen and (min-width: 600px) {
+}
+
+/* large screen */
+@media screen and (min-width: 800px) {
+ 
 }

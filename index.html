@@ -1,297 +1,404 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--IEの互換モードを使わず、標準モードで表示させる-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--レスポンシブのために記述する-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--検索のときに表示される-->
-    <meta name="description" content="SAPICA定期券で損をする人は？お得に地下鉄を利用する方法まとめ"/>
+    <meta name="description" content="SAPICA定期券で損をする人は？お得に地下鉄を利用する方法まとめ" />
     <!--Google検索を避ける記述-->
     <meta name="robots" content="noindex,nofollow" />
     <title>SAPICAお得情報.net</title>
-    <!--CSSの読込み-->
-    <link rel="stylesheet" href="style.css">
     <!--ファビコンの設定-->
     <link rel="icon" href="images/fabicon16x16.png" sizes="16x16" type="image/png" />
     <link rel="icon" href="images/fabicon32x32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="images/fabicon48x48.png" sizes="48x48" type="image/png" />
     <link rel="icon" href="images/fabicon64x64.png" sizes="64x64" type="image/png" />
-    <!--JavaScriptの読込み-->
-    <script src="#"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" />
     <!--FontAwesomeの読込み-->
     <script src="https://kit.fontawesome.com/e4756a8c29.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <headre>
-        <ul class="header_ul">
-            <li class="home"><i class="fas fa-home"></i><a href="index.html">ホーム</a></li>
-            <li class="search"><i class="fas fa-search">サイト内検索</i></li>
-        </ul>
+        <nav class="topNav">
+            <ul class="header_ul">
+                <li class="home"><i class="fas fa-home"></i><a href="index.html">ホーム</a></li>
+                <li class="search"><i class="fas fa-search">サイト内検索</i></li>
+            </ul>
+        </nav>
         <div class="top">
-            <div class="img_eye"><img src="images/eyeCatching.png" alt="eyeCatching">
+            <div><img class="imgEye imageWidth" src="images/eyeCatching.png" alt="eyeCatching"></div>
+            <div class="topText">
+                <p class="date">2021年05月06日</p>
+                <h1 class="mainTitle"><span class="sapica">SAPICA</span>の定期はお得なの？<br>【定期を買うと損する３つの理由】</h1>
             </div>
-            <div class="top_right">
-                <p>2021年05月06日</p>
-                <h2><span>SAPICA</span>の定期はお得なの？<br>【定期を買うと損する３つの理由】</h2>
-                <div><img src="images/topmessage.jpg"></div>
-            </div>
+            <div><img class="messageText1" src="images/topmessage.jpg" alt=""></div>
         </div>
     </headre>
     <div class="content">
         <main>
-            <div><img src="images/contentTop.jpg"></div>
-            <div><img src="images/waku02.png"></div>
-            <P>Capret 1</P>
-            <p>／定期で損をする人</p>
-            <div><img src="images/card.jpg"></div>
+            <nav class="indexNav">
+                <h2 class="textIndex">Index</h2>
+                <ul class="indexContainer">
+                    <li><a href="#chapter1">
+                            <p class="indexMenu">Chapter1</p>
+                        </a>
+                        <p class="indexMenuText">/定期で損をする人</p>
+                    </li>
+                    <li><a href="#chapter2">
+                            <p class="indexMenu">Chapter2</p>
+                        </a>
+                        <p class="indexMenuText">/10％ポイントバック</p>
+                    </li>
+                    <li><a href="#chapter3">
+                            <p class="indexMenu">Chapter3</p>
+                        </a>
+                        <p class="indexMenuText">/オートチャージでポイント</p>
+                    </li>
+                    <li><a href="#chapter4">
+                            <p class="indexMenu">Chapter4</p>
+                        </a>
+                        <p class="indexMenuText">/クレカ各社のポイント</p>
+                    </li>
+                    <li><a href="#chapter5">
+                            <p class="indexMenu">Chapter5</p>
+                        </a>
+                        <p class="indexMenuText">/定期のメリット</p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="questionContainer">
+                <p class="question">?</p>
+            </div>
+            <div class="messageText2Container"><img class="messageText2" src="images/contentTop.jpg" alt=""></div>
+
+            <div class="chapter1">
+                <img class="chapterWaku" src="images/waku02.png">
+                <a id="chapter1" class="chapter1Text">
+                    <P>Chapter 1</P>
+                    <p>/定期で損をする人</p>
+                </a>
+            </div>
+
+            <div><img class="imageWidth" src="images/card.jpg"></div>
             <h3>月43回以上乗らない人は損をします</h3>
-            <P>定期券＝安い・お得<br><br>というイメージがあったのですが、<br>月43回以上乗らないと損をします<br><br>北関東学園の授業数は月17回程度なので、<br>通学だけで使用すると足りません<br><br><br><br></be></P>
-            <p>各月の授業数</p>
-            <table>
+            <p class="margin16px">定期券＝安い・お得</p>
+            <p class="margin16px">というイメージがあったのですが、<br>月43回以上乗らないと損をします</p>
+            <p class="margin32px">北関東学園の授業数は月17回程度なので、<br>通学だけで使用すると足りません</p>
+            <table class="lesson">
                 <tr>
-                    <th>4月</th>
-                    <th>5月</th>
-                    <th>6月</th>
-                    <th>7月</th>
-                    <th>8月</th>
-                    <th>9月</th>
-                    <th>10月</th>
+                    <th class="fontSize15rem" colspan="7">各月の授業数</th>
                 </tr>
                 <tr>
-                    <th>8回</th>
-                    <th>16回</th>
-                    <th>17回</th>
-                    <th>19回</th>
-                    <th>17回</th>
-                    <th>16回</th>
-                    <th>11回</th>
-                </tr>
-            </table>
-            <p>43回の根拠</p>
-            <p>例）片道250円の場合</p>
-            <table>
-                <tr>
-                    <th>1ヶ月定期</th>
-                    <th>10,500円</th>
-                    <th>10,500円÷250円＝42</th>
+                    <td>5月</td>
+                    <td>6月</td>
+                    <td>4月</td>
+                    <td>7月</td>
+                    <td>8月</td>
+                    <td>9月</td>
+                    <td>10月</td>
                 </tr>
                 <tr>
-                    <th>3ヶ月定期</th>
-                    <th>29,930円</th>
-                    <th>29,930÷250円＝199.72</th>
+                    <td>8回</td>
+                    <td>16回</td>
+                    <td>17回</td>
+                    <td>19回</td>
+                    <td>17回</td>
+                    <td>16回</td>
+                    <td>11回</td>
                 </tr>
             </table>
-            <p>わかりやすくするため、<br>
+            <p class="fontSize15rem basis">43回以上の根拠</p>
+            <p class="example">例）片道250円の場合</p>
+            <table class="fee">
+                <tr>
+                    <th class="bgc395184">1ヶ月定期</th>
+                    <td class="bgcE9f1ff">10,500円</td>
+                    <td>10,500円÷250円＝42</td>
+                </tr>
+                <tr>
+                    <th class="bgcE9e9e9">3ヶ月定期</th>
+                    <td>29,930円</td>
+                    <td>29,930÷250円＝199.72</td>
+                </tr>
+            </table>
+            <p class="margin32px">わかりやすくするため、<br>
                 1ヶ月定期が10,500円<br>
                 片道250円の人を例に<br>
                 考えていきます
             </p>
+
             <div class="formula">定期券料金÷片道料金<br>＝損益分岐点</div>
-            <p>「<span>定期券料金÷片道料金</span>」で計算すると、<br>
-                お得になる回数がわかります<br><br>
-                1ヶ月定期の場合は42回でトントン、<br>43回以上からお得になります<br><br>ハローワーク職業訓練受講給付金は<br>月ごとの申請です<br><br>1ヶ月定期を利用することになるため、<br>3ヶ月定期については以下省略します</p>
-            <p>この計算式には<br><span>SAPICAの10％ポイント還元</span>が<br>含まれていないので、<br><br>次に<br>ポイントを含めた本当の回数を<br>計算します</p>
-            <div><img src="images/drop.png"></div>
-            <p>ポイントを含む<br>ホントにお得な<br>回数は？</p>
-            <div><img src="images/human01.png"></div>
-            <div><img src="images/waku02.png"></div>
-            <P>Capret 2</P>
-            <p>／10％ポイントバック</p>
-            <div><img src="images/human02.png"></div>
+            <div class="commentary lh1rem">
+                <p>「<span class="color395184">定期券料金÷片道料金</span>」で計算すると、</p>
+                <p class="marginB32px">お得になる回数がわかります</p>
+                <p>1ヶ月定期の場合は42回でトントン、</p>
+                <p class="marginB32px">43回以上からお得になります</p>
+                <p>ハローワーク職業訓練受講給付金は</p>
+                <p class="marginB32px">月ごとの申請です</p>
+                <p>1ヶ月定期を利用することになるため、</p>
+                <p class="marginB32px">3ヶ月定期については以下省略します</p>
+                <p>この計算式には</p>
+                <p><span class="color395184">SAPICAの10％ポイント還元</span>が</p>
+                <p class="marginB32px">含まれていないので、</p>
+                <p>次に</p>
+                <p>ポイントを含めた本当の回数を</p>
+                <p class="marginB32px">計算します</p>
+            </div>
+            <div class="blue_img">
+                <div><img src="images/drop.png"></div>
+                <p class="blue_imgText">ポイントを含む<br>ホントにお得な<br>回数は？</p>
+            </div>
+            <div class="human01"><img src="images/human01.png" width="30%" height="30%"></div>
+
+            <div class="chapter2">
+                <img class="chapterWaku" src="images/waku02.png">
+                <a id="chapter2" class="chapter2Text">
+                    <P>chapter 2</P>
+                    <p>/10％ポイントバック</p>
+                </a>
+            </div>
+
+            <div><img src="images/human02.png" width="30%" height="30%"></div>
             <h3>チャージは10回乗ると1回タダになる</h3>
-            <p>SAPICAをチャージで乗車すると、<br>
-                10％のポイントバックがあります<br><br>
-                10回乗ると1回タダになるので、<br>
-                10回分の料金で11回乗ることができます<br><br>
-                定期と同じ10,500円使うと<br>
-                46回乗ることができます
-            </p>
-            <p>例）片道250円の場合</p>
-            <table>
+            <p class="marginB16px fontWeight">SAPICAをチャージで乗車すると、<br>
+                10％のポイントバックがあります</p>
+            <p class="marginB16px fontWeight">10回乗ると1回タダになるので、<br>
+                10回分の料金で11回乗ることができます</p>
+            <p class="marginB16px fontWeight">定期と同じ10,500円使うと<br>
+                46回乗ることができます</p>
+            <p class="example">例）片道250円の場合</p>
+            <table class="fee">
                 <tr>
-                    <th>チャージ</th>
-                    <th>10,500円</th>
-                    <th>1,050ポイント（4回分）</th>
+                    <th class="bgc395184">チャージ</th>
+                    <td class="bgcE9f1ff">10,500円</td>
+                    <td>1,050ポイント（4回分）</td>
                 </tr>
                 <tr>
-                    <th>1ヶ月定期</th>
-                    <th>10,500円</th>
-                    <th>10,500÷250円＝42</th>
+                    <th class="bgcE9e9e9">1ヶ月定期</th>
+                    <td>10,500円</td>
+                    <td>10,500÷250円＝42</td>
                 </tr>
             </table>
-            <p>ポイントを含めて<br>
+            <p class="marginB48px fontWeight">ポイントを含めて<br>
                 定期で元を取ろうと思ったら<br>
                 46回でトントン、47回以上乗るとお得<br>
                 になります
             </p>
-            <p>ポイント還元比較まとめ</p>
-            <table>
+
+            <table class="comparisonTable">
                 <tr>
-                    <th>カードの種類</th>
-                    <th>ポイント</th>
-                    <th>地域</th>
+                    <th class="comparisonTableTitle" colspan="3">ポイント還元比較まとめ</th>
                 </tr>
                 <tr>
-                    <th>SAPICA</th>
-                    <th>10％還元</th>
-                    <th>札幌</th>
+                    <th class="comparisonTableContents">カードの種類</th>
+                    <th class="comparisonTableContents">ポイント</th>
+                    <th class="comparisonTableContents">地域</th>
                 </tr>
                 <tr>
-                    <th>KITACA</th>
-                    <th>なし</th>
-                    <th>北海道</th>
+                    <td class="bgc395184">SAPICA</td>
+                    <td>10％還元</td>
+                    <td>札幌</td>
                 </tr>
                 <tr>
-                    <th>SUICA</th>
-                    <th>最大2％</th>
-                    <th>関東</th>
+                    <td>KITACA</td>
+                    <td>なし</td>
+                    <td>北海道</td>
                 </tr>
                 <tr>
-                    <th>PASMO</th>
-                    <th>3Pまたは7P/日</th>
-                    <th>関東</th>
+                    <td>SUICA</td>
+                    <td>最大2％</td>
+                    <td>関東</td>
                 </tr>
                 <tr>
-                    <th>IKOCA</th>
-                    <th>基本は11回目以降10％<br>※時間帯指定など細かく規定</th>
-                    <th>関西</th>
+                    <td>PASMO</td>
+                    <td>3Pまたは7P/日</td>
+                    <td>関東</td>
+                </tr>
+                <tr>
+                    <td class="textInCell">IKOCA</td>
+                    <td>基本は11回目以降10％<br><span class="warningNote">※時間帯指定など細かく規定</span></td>
+                    <td class="textInCell">関西</td>
                 </tr>
             </table>
-            <p>SAPICAのポイントは他社と比較してもお得<br>
+            <p class="fontWeight marginB80px">SAPICAのポイントは他社と比較してもお得！<br>
                 地下鉄を使う場合は必ず利用したいです
             </p>
-            <p>次は<br>
+            <p class="fontWeight marginB80px">次は<br>
                 オートチャージで便利に<br>
                 少しお得に使う方法を紹介します
             </p>
-            <div><img src="images/sapicaAuto.jpg"></div>
-            <div><img src="images/waku02.png"></div>
-            <p>Capret 3</p>
-            <p>／オートチャージでポイント</p>
-            <div><img src="images/autoCharge.jpg"></div>
+            <div><img class="marginB160px" src="images/sapicaAuto.jpg" alt="" width="40%" height="40%"></div>
+
+            <div class="chapter3">
+                <img class="chapterWaku marginB80px" src="images/waku02.png">
+                <a id="chapter3" class="chapter3Text">
+                    <p>chapter 3</p>
+                    <p>/オートチャージでポイント</p>
+                </a>
+            </div>
+
+            <div><img src="images/autoCharge.jpg" width="65%" height="65%"></div>
             <h3>オートチャージはクレカポイントがもらえる</h3>
-            <p>SAPICAオートチャージは残高1,000円以下になると<br>
-                自動で1,000円チャージされるサービスです<br><br>
-                改札を通るときの残高不足がなくなります<br><br>
-                SAPICAオートチャージでも、<br>
-                クレジットカードポイントが付きます<br><br>
-                ただでさえお得なSAPICAが更にお得に
+            <p class="fontWeight marginB32px">SAPICAオートチャージは残高1,000円以下になると<br>
+                自動で1,000円チャージされるサービスです</p>
+            <p class="fontWeight marginB32px">改札を通るときの残高不足がなくなります</p>
+            <p class="fontWeight marginB32px">SAPICAオートチャージでも、<br>
+                クレジットカードポイントが付きます</p>
+            <p class="fontWeight marginB32px">ただでさえお得なSAPICAが更にお得に！</p>
             </p>
             <h3>オートチャージの登録方法</h3>
-            <p>オートチャージに必要なもの</p>
-            <ol>
-                <li>記名SAPICA</li>
-                <li>クレジットカード</li>
-                手続き時
-                <li>身分証明書</li>
-            </ol>
-            <div><img src="images/human03.png"></div>
-            <p>1.改札にある申込書に記載して郵送します</p>
-            <p>申込書</p>
-            <div><img src="images/sapicaAuto.jpg"></div>
-            <p>2.概ね2周間ほどで郵送されてくる「ハガキ」と<br>
+            <section class="required">
+                <p class="automatedCharge">SAPICAオートチャージに必要なもの</p>
+                <ol class="orderList">
+                    <li>記名SAPICA</li>
+                    <li>クレジットカード</li>
+                    <li class="unnumbered">手続き時</li>
+                    <li value="3">身分証明書</li>
+                </ol>
+            </section>
+            <div class="human03"><img class="marginB48px" src="images/human03.png" width="40%" height="40%"></div>
+            <p class="fontWeight marginB48px">1.改札にある申込書に記載して郵送します</p>
+            <div class="applicationForm">
+                <p class="applicationFormText">申込書</p>
+                <div class="applicationFormImg"><img src="images/sapicaAuto.jpg" alt="" width="70%" height="70%"></div>
+            </div>
+            <p class="fontWeight marginB32px">2.概ね2周間ほどで郵送されてくる「ハガキ」と<br>
                 「身分証明書」と「記名SAPICA」を持って、<br>
                 駅の窓口などへ行きます
             </p>
-            <p>持っていくもの</p>
-            <ol>
-                <li>1.ハガキ</li>
-                <img src="images/autoCharge02.jpg">
-                <img src="images/autoCharge03.jpg">
-                <li>2.身分証明書</li>
-                免許証、マイナンバーカードなど
-                <li>記名SAPICA</li>
-                （定期券SAPICAでも可）
-            </ol>
-            <p>私の場合は4月19日に申込書を送り<br>4月28日にはがきが届きました</p>
-            <p>次に、クレジットカードには<br>
+            <div class="bring">
+                <p class="bringTitle">持っていくもの</p>
+                <div class="bringContainer">
+                    <ol>
+                        <li>ハガキ</li>
+                        <li class="bringUnnumbered">
+                            <div class="bringImg">
+                                <img src="images/autoCharge02.jpg" width="36.5%" height="36.5%">
+                                <img src="images/autoCharge03.jpg" width="70%" height="70%">
+                            </div>
+                        </li>
+                        <li value="2">身分証明書</li>
+                        <li class="bringUnnumbered bringUnnumberedText">免許証、マイナンバーカードなど</li>
+                        <li value="3">記名SAPICA</li>
+                        <li class="bringUnnumbered bringUnnumberedText">（定期券SAPICAでも可）</li>
+                    </ol>
+                </div>
+            </div>
+            <p class="fontWeight marginB80px">私の場合は4月19日に申込書を送り<br>4月28日にはがきが届きました</p>
+            <p class="fontWeight marginB80px">次に、クレジットカードには<br>
                 どのくらいポイントがつくか<br>
                 調べたデータを紹介します
             </p>
-            <div><img src="images/human04.png"></div>
-            <div><img src="images/waku02.png"></div>
-            <p>Capret 4</p>
-            <p>／クレカ各社のポイント</p>
-            <div><img src="images/creditcard_nonumber_gold.png"></div>
+            <div class="human04"><img src="images/human04.png" width="40%" height="40%"></div>
+
+            <div class="chapter4">
+                <img class="chapterWaku" src="images/waku02.png">
+                <a id="chapter4" class="chapter4Text">
+                    <p>chapter 4</p>
+                    <p>/クレカ各社のポイント</p>
+                </a>
+            </div>
+
+            <div><img src="images/creditcard_nonumber_gold.png" width="40%" height="40%"></div>
             <h3>主要カードのポイント還元率まとめ</h3>
-            <p>ここでは有名クレジットカード会社の<br>
+            <p class="fontWeight marginB48px">ここでは有名クレジットカード会社の<br>
                 ポイント還元率を紹介します
             </p>
-            <p>カードの還元率は変更されるので、<br>
-                <span>必ず確認してから契約や使用してください</span>
+            <p class="fontWeight marginB48px">カードの還元率は変更されるので、<br>
+                <span class="textRed">必ず確認してから契約や使用してください</span>
             </p>
-            <ul>
-                <li>楽天経済圏で有名な楽天カード<br>１％</li>
-                <li>ドコモ利用者に最適のｄカードの還元率<br>１％</li>
-                <li>旅行好きに最適のJALカードの還元率<br>0.5％</li>
-                <li>イオンが近い人に最適のJALカードの還元率<br>0.5％</li>
-            </ul>
-            <p>楽天カード</p>
-            <p>ｄカード</p>
-            <p>JALカード</p>
-            <p>イオンカード</p>
-            <div><img src="images/human05.png"></div>
-            <p>還元率が高いカードでも１％なので、<br>
-                １万円使って100円です<br><br>
-                10％の還元率と比べると少ないですが、<br>
+            <div class="creditCard">
+                <ul class="creditCardList">
+                    <li class="creditCardName creditCardName1">楽天カード</li>
+                    <li>楽天経済圏で有名な楽天カードの還元率</li>
+                    <li class="marginB48px">１％</li>
+                    <li class="creditCardName creditCardName2">ｄカード</li>
+                    <li>ドコモ利用者に最適のｄカードの還元率</li>
+                    <li class="marginB48px">１％</li>
+                    <li class="creditCardName creditCardName3">JALカード</li>
+                    <li>旅行好きに最適のJALカードの還元率</li>
+                    <li class="marginB48px">0.5％</li>
+                    <li class="creditCardName creditCardName4">イオンカード</li>
+                    <li>イオンが近い人に最適のJALカードの還元率</li>
+                    <li class="marginB32px">0.5％</li>
+                </ul>
+            </div>
+            <div class="human05"><img src="images/human05.png" width="50%" height="50%"></div>
+            <p class="fontWeight marginB48px">還元率が高いカードでも１％なので、<br>
+                １万円使って100円です</p>
+            <p class="fontWeight marginB48px">10％の還元率と比べると少ないですが、<br>
                 ないよりあった方がいいですよね
             </p>
-            <p>最後に定期券を利用した方が<br>
-                お得な人を考えていきます<br><br>
-                還元率が大きいSAPICAでも、<br>
+            <p class="fontWeight marginB48px">最後に定期券を利用した方が<br>
+                お得な人を考えていきます</p>
+            <p class="fontWeight marginB160px">還元率が大きいSAPICAでも、<br>
                 乗車する回数が多いと<br>
                 乗り放題の定期券を利用した方が<br>
                 メリットがある人もいます
             </p>
-            <div><img src="images/drop.png"></div>
-            <p>定期で得する人</p>
-            <p>とは？</p>
-            <div><img src="images/waku02.png"></div>
-            <p>Chapter 5</p>
-            <p>／定期のメリット</p>
+            <div class="blue_img marginB160px">
+                <div><img src="images/drop.png"></div>
+                <p class="blue_imgText2">定期で得する人<br>とは？</p>
+            </div>
+            <div class="chapter5">
+                <img class="chapterWaku" src="images/waku02.png">
+                <a id="chapter5" class="chapter5Text">
+                    <p>chapter 5</p>
+                    <p>/定期のメリット</p>
+                </a>
+            </div>
+
             <h3>定期を使うとお得になる人</h3>
-            <p>結論から書くと、定期を使うとお得になる人は<br>
-                利用回数が多い人です<br><br>
-                例えば
-            </p>
-            <p>1.途中下車をする人</p>
-            <p>アルバイトや買い物など<br>
-            途中で降りてまた乗る人は、定期がお得です</p>
-            <p>2.休日に利用する人</p>
-            <p>通学以外にも利用する人は<br>
-                定期がお得です
-            </p>
-            <p>まとめ</p>
-            <p>職業訓練受講給付金は<br>
+            <p class="fontWeight marginB48px">結論から書くと、定期を使うとお得になる人は<br>
+                利用回数が多い人です</p>
+            <p class="fontWeight marginB48px">例えば</p>
+            <p class="fontWeight marginB16px smallTitle">1.途中下車をする人</p>
+            <p class="fontWeight marginB48px">アルバイトや買い物など<br>
+                途中で降りてまた乗る人は、定期がお得です</p>
+            <p class="fontWeight marginB16px smallTitle">2.休日に利用する人</p>
+            <p class="fontWeight marginB48px">通学以外にも利用する人は<br>
+                定期がお得です</p>
+            <h3>まとめ</h3>
+            <p class="fontWeight marginB48px">職業訓練受講給付金は<br>
                 交通費の支給があるため<br>
                 乗り放題の定期券を契約する人が<br>
                 少なくないと思います
             </p>
-            <p>ですが、<br>
+            <p class="fontWeight marginB48px">ですが、<br>
                 月に47回以上乗る予定がない人は<br>
                 クレカポイントの還元がある<br>
                 チャージ利用のほうが、<br>
                 色んな意味で良いと思います
             </p>
-            <p>ポイント還元率が1％</p>
-            <p>楽天カード</p>
-            <p>ｄカード</p>
-            <P>ポイント還元率が0.5％</P>
-            <p>イオンカード</p>
-            <p>JALカード</p>
-            <p>最後まで読んでいただきありがとうございました！</p>
+            <div class="cardContainer">
+            <div class="card_inf">
+                <p class="fontWeight marginB16px cardInfoTitle">ポイント還元率が1％</p>
+                <p class="fontWeight marginB16px">楽天カード</p>
+                <p class="fontWeight marginB48px">ｄカード</p>
+                <P class="fontWeight marginB16px cardInfoTitle">ポイント還元率が0.5％</P>
+                <p class="fontWeight marginB16px">イオンカード</p>
+                <p class="fontWeight marginB16px">JALカード</p>
+            </div>
+        </div>
+            <p class="fontWeight marginB48px">最後まで読んでいただきありがとうございました！</p>
         </main>
-        <nav>right</nav>
     </div>
     <footer>
-        <ul>
-            <li><a href="index.html">TOP</a></li>
-            <li><a href="#">プライバシー・ポリシー</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+        <ul class="footerNav">
+            <li><a class="fontSettings" href="index.html">TOP</a></li>
+            <li class="privacy"><a class="fontSettings" href="#">プライバシー・ポリシー</a></li>
+            <li><a class="fontSettings" href="#">お問い合わせ</a></li>
         </ul>
-        <small><a href="index.html">©SAPICAお得情報.net</a></small>
+        <small><a class="fontSettings" href="index.html">©SAPICAお得情報.net</a></small>
     </footer>
+    <!--JavaScriptの読込み-->
+    <script src="#"></script>
 </body>
+
 </html>
